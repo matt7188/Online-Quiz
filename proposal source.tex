@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{CIS 5930 Python Programming Project Proposal online quiz management system}
+
+\author{Mourya Kodidela, Matt Thompson}
+\date{September 19,2016}
+
+\begin{document}
+
+\maketitle
+
+\section{Aim:}
+The project that we propose to do is an online quiz update module. The purpose of this is to make adjustments to the already in existence online quiz system that has been developed by previous students. The following are the adjustments that we are planning on making:
+
+The first thing we will be implementing is a means to output code that is submitted to the system.Following that, we will be implementing a server side storage and comparison so that programing submission may be ranked among students.
+Once stored, we will be implementing a means of reading and analyzing the code, Allowing for automatic scoring based on output, runtime, and amount of comments.
+
+In this, our aim is to design an online quiz management system that takes in user programs corresponding to quiz questions. The steps we will be taking to accomplish these goals are as follows:
+
+\section{Steps involved:} 
+  \begin{itemize}
+   
+  \item First we require a client interface , through which user can interact with the server and submit his code .The user can upload a file containing the code or type it in. The implementation may require the use of HTML, CSS , JAVASCRIPT, AJAX . There will basically be two types of users administrators, users.
+ \item 
+ The input is now taken to the server, the server runs the program and analyses the program, the grading of the program is done based on the output, number of test cases it satisfies, runtime and the presentation of the program , for example comments, etc. 
+ \item
+ The server is written in python and we may use Flask(python microframework). The server may also require some sort of sandbox for security reasons, so that malicious programs submitted by the user can not affect server.
+ We may need something like docker, which is a software containerization platform.
+ \item 
+ The results are then stored in a database based on the quality of the program and are stored in a database like SQlite. The results are then displayed to the users and appropriate feedback is given them regarding grading criteria of their program.
+ 
+\end{itemize}
+
+\end{document}
